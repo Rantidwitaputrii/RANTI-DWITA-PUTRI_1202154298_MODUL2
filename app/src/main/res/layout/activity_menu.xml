@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.example.com.myresto.Menu">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="102dp"
+        android:layout_height="81dp"
+        app:srcCompat="@drawable/sate_padang"
+        android:onClick="gambarsate"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/nasi_goreng"
+        android:onClick="gambarnasi"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="106dp"
+        android:layout_height="85dp"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/jus_mangga"
+        android:onClick="gambarjus"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="106dp"
+        android:layout_height="98dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        app:srcCompat="@drawable/es_teh"
+        android:onClick="gambarteh"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="102dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/mie_goreng"
+        android:onClick="gambarmie"/>
+
+    <TextView
+        android:id="@+id/nasi_goreng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nasi_gor"
+        android:layout_alignStart="@+id/nasi_gor"
+        android:layout_below="@+id/nasi_gor"
+        android:layout_marginTop="11dp"
+        android:text="Harga : Rp.25.000" />
+
+    <TextView
+        android:id="@+id/nasi_gor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView6"
+        android:text="Nasi Goreng" />
+
+    <TextView
+        android:id="@+id/sate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sate_padang"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/sate_padang"
+        android:layout_marginTop="15dp"
+        android:text="Sate Padang" />
+
+    <TextView
+        android:id="@+id/sate_padang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nasi_gor"
+        android:layout_marginBottom="21dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:text="Harga : Rp.30.000" />
+
+    <TextView
+        android:id="@+id/mie"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView6"
+        android:text="Mie Goreng" />
+
+    <TextView
+        android:id="@+id/mie_goreng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        android:text="Harga : Rp.15.000" />
+
+    <TextView
+        android:id="@+id/jus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        android:text="Jus Mangga" />
+
+    <TextView
+        android:id="@+id/jus_mangga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jus"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        android:text="Harga : Rp.17.000" />
+
+    <TextView
+        android:id="@+id/teh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mie"
+        android:layout_alignRight="@+id/mie"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="12dp"
+        android:text="Es Teh" />
+
+    <TextView
+        android:id="@+id/es_teh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teh"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        android:text="Harga : Rp.12.000" />
+</RelativeLayout>
